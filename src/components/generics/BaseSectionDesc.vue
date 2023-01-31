@@ -15,7 +15,11 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../../assets/scss/partials/variables.scss' as *;
+
 section {
+    color: $text-grey-10;
+
     h1 {
         font-weight: 700;
         margin-bottom: 1.75rem;
