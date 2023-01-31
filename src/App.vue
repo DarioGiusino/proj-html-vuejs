@@ -1,10 +1,13 @@
 <script>
+import AppHeader from './components/AppHeader.vue';
 export default {
-  name: 'Edu Prime'
+  name: 'Edu Prime',
+  components: { AppHeader }
 }
 </script>
 
 <template>
+  <app-header></app-header>
 
 </template>
 
