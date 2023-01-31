@@ -42,7 +42,7 @@ header {
     color: $text-white-1;
 
     nav {
-        padding: 1.75rem;
+        padding: 1.25rem;
         background-color: $bg-red-2;
 
         .header-logo {
