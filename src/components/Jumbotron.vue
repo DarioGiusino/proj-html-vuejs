@@ -12,8 +12,10 @@ export default {
         <h1>{{ title }}</h1>
         <slot></slot>
         <div class="buttons">
-            <base-button class="left-jumbo-btn" button-label="Search courses"></base-button>
-            <base-button class="right-jumbo-btn" button-label="Apply for university"></base-button>
+            <base-button class="left-jumbo-btn" button-label="Search courses">
+                <font-awesome-icon class="me-1" icon="fa-solid fa-magnifying-glass" /></base-button>
+            <base-button class="right-jumbo-btn" button-label="Apply for university">
+                <font-awesome-icon class="me-1" icon="fa-solid fa-user-plus" /></base-button>
         </div>
     </section>
 </template>
