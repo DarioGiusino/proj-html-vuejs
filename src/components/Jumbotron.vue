@@ -12,9 +12,9 @@ export default {
         <h1>{{ title }}</h1>
         <slot></slot>
         <div class="buttons">
-            <base-button class="left-jumbo-btn yellow-btn" button-label="Search courses">
+            <base-button class="yellow-btn" button-label="Search courses">
                 <font-awesome-icon class="me-1" icon="fa-solid fa-magnifying-glass" /></base-button>
-            <base-button class="right-jumbo-btn white-btn" button-label="Apply for university">
+            <base-button class="white-btn" button-label="Apply for university">
                 <font-awesome-icon class="me-1" icon="fa-solid fa-user-plus" /></base-button>
         </div>
     </section>
@@ -44,14 +44,6 @@ export default {
         margin-top: 2rem;
         display: flex;
         gap: 2rem;
-
-        .left-jumbo-btn {
-            font-weight: 500;
-        }
-
-        .right-jumbo-btn {
-            font-weight: 500;
-        }
     }
 
 }

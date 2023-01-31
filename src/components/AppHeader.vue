@@ -66,7 +66,6 @@ header {
             .nav-button {
                 text-transform: uppercase;
                 font-size: 13px;
-                font-weight: 500;
             }
         }
     }
