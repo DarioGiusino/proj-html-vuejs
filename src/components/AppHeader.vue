@@ -24,7 +24,7 @@ export default {
 
             <!-- right navbar -->
             <nav-links class="links" :links="headerLinks">
-                <base-button class="nav-button" button-label="view courses"></base-button>
+                <base-button class="nav-button yellow-btn" button-label="view courses"></base-button>
             </nav-links>
         </nav>
 
@@ -64,8 +64,6 @@ header {
             font-weight: 500;
 
             .nav-button {
-                background-color: $bg-yellow;
-                color: $text-white-1;
                 text-transform: uppercase;
                 font-size: 13px;
                 font-weight: 500;

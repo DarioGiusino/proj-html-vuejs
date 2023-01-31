@@ -12,9 +12,9 @@ export default {
         <h1>{{ title }}</h1>
         <slot></slot>
         <div class="buttons">
-            <base-button class="left-jumbo-btn" button-label="Search courses">
+            <base-button class="left-jumbo-btn yellow-btn" button-label="Search courses">
                 <font-awesome-icon class="me-1" icon="fa-solid fa-magnifying-glass" /></base-button>
-            <base-button class="right-jumbo-btn" button-label="Apply for university">
+            <base-button class="right-jumbo-btn white-btn" button-label="Apply for university">
                 <font-awesome-icon class="me-1" icon="fa-solid fa-user-plus" /></base-button>
         </div>
     </section>
@@ -46,14 +46,10 @@ export default {
         gap: 2rem;
 
         .left-jumbo-btn {
-            background-color: $bg-yellow;
-            color: $text-white-1;
             font-weight: 500;
         }
 
         .right-jumbo-btn {
-            background-color: $bg-white-2;
-            color: $text-red;
             font-weight: 500;
         }
     }

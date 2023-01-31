@@ -1,3 +1,5 @@
+@use "./partials/variables.scss" as *;
+
 // # generics
 body {
   font-family: "Fredoka", sans-serif;
@@ -12,4 +14,25 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+// # utils
+.section-icon {
+  width: 50px;
+}
+
+// * button utils
+.red-btn {
+  background-color: $bg-red-2;
+  color: $text-white-2;
+}
+
+.yellow-btn {
+  background-color: $bg-yellow;
+  color: $text-white-1;
+}
+
+.white-btn {
+  background-color: $bg-white-2;
+  color: $text-red;
 }
