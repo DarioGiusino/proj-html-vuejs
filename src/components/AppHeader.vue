@@ -1,9 +1,10 @@
 <script>
 import NavLinks from './NavLinks.vue';
 import BaseButton from './generics/BaseButton.vue';
+import Jumbotron from './Jumbotron.vue';
 export default {
     name: 'App Header',
-    components: { NavLinks, BaseButton },
+    components: { NavLinks, BaseButton, Jumbotron },
     data() {
         return {
             headerLinks: ['Home', 'Courses', 'About Us', 'News', 'Pages', 'Contact', 'Purchase']
@@ -28,6 +29,11 @@ export default {
         </nav>
 
         <!-- # jumbotron -->
+        <jumbotron title="Key to your success">
+            <p class="jumbo-paragraph">EduPrime is the most versatile WordPress theme for educational purposes,
+                showcasing
+                universities, courses, secondary schools etc.</p>
+        </jumbotron>
     </header>
 </template>
 
@@ -60,6 +66,12 @@ header {
                 font-weight: 500;
             }
         }
+    }
+
+    .jumbo-paragraph {
+        margin-bottom: 0;
+        width: 35rem;
+        font-weight: 300;
     }
 }
 </style>
