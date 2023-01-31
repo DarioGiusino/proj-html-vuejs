@@ -34,6 +34,9 @@ export default {
                 showcasing
                 universities, courses, secondary schools etc.</p>
         </jumbotron>
+
+        <!-- # wave -->
+        <div class="header-wave"></div>
     </header>
 </template>
 
@@ -41,11 +44,13 @@ export default {
 @use '../assets/scss/partials/variables.scss' as *;
 
 header {
-    height: 600px;
+    // height: 600px;
     background-image: url('../assets/img/theme_slider2_bg-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     color: $text-white-1;
+    position: relative;
 
     nav {
         padding: 1.25rem;
@@ -72,6 +77,13 @@ header {
         margin-bottom: 0;
         width: 35rem;
         font-weight: 300;
+    }
+
+    .header-wave {
+        height: 10rem;
+        background-color: $bg-red-2;
+        background-size: cover;
+        background-image: url('../assets/img/Wave-1.png');
     }
 }
 </style>
