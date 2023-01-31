@@ -7,12 +7,11 @@ export default {
 <template>
     <header>
         <!-- # upper navbar -->
-        <nav class="d-flex justify-content-between">
+        <nav class="d-flex justify-content-between align-items-center">
             <a href="#">
                 <img class="header-logo" src="../assets/img/theme_eduprime_logo.png" alt="edu prime logo">
             </a>
 
-            <navbar-links></navbar-links>
         </nav>
 
         <!-- # jumbotron -->
