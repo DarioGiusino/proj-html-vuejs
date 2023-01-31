@@ -8,8 +8,9 @@ export default {
 </script>
 
 <template>
+    <!-- # faculties section -->
     <section id="faculties">
-        <!-- # upper faculties section -->
+        <!-- ? upper faculties section -->
         <div class="container">
             <div class="row">
                 <div class="col-8">
