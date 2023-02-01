@@ -41,7 +41,7 @@ const courses = [
   },
   {
     title: "Network introductions",
-    teacher: "James Collins",
+    teacher: "Marco Lanci <3",
     price: "Free",
     image: "Network-icon.png",
   },
