@@ -11,13 +11,17 @@ import {
   faCalendarDays,
   faUserTie,
   faMoneyBillWave,
+  faPlus,
+  faEye,
 } from "@fortawesome/free-solid-svg-icons";
 library.add(
   faMagnifyingGlass,
   faUserPlus,
   faCalendarDays,
   faUserTie,
-  faMoneyBillWave
+  faMoneyBillWave,
+  faPlus,
+  faEye
 );
 
 import App from "./App.vue";
