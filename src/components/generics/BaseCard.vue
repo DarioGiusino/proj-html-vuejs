@@ -10,23 +10,49 @@ export default {
         date: String,
         teacher: String,
         price: String
+    },
+    methods: {
+        // build image src
+        cardIcon(path) {
+            //build src
+            const url = new URL(`../../assets/img/${path}`, import.meta.url);
 
+            //return src
+            return url.href;
+        }
     }
 }
 </script>
 
 <template>
     <div class="card">
-        <figure class="section-icon">
-            <img src="../../assets/img/Speaker-icon.png" class="card-img-top" alt="...">
+        <!-- card image -->
+        <figure v-if="image" class="section-icon">
+            <img :src="cardIcon(image)" class="card-img-top" :alt="title">
         </figure>
+
+        <!-- ? card body -->
         <div class="card-body">
-            <h5 class="fw-semibold">How to be a speaker</h5>
-            <p class="mb-2">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <p class="mb-2"><span></span>Teacher: <strong>James Collins</strong></p>
-            <p class="mb-2"><span></span>Price: <strong>$21,00</strong></p>
-            <p class="mb-2"><span></span>20 May 21:30 PM</p>
+            <!-- title -->
+            <h5 class="fw-semibold">{{ title }}</h5>
+
+            <!-- paragraph -->
+            <p v-if="paragraph" class="mb-2">{{ paragraph }}</p>
+
+            <!-- teacher -->
+            <p v-if="teacher" class="mb-2"><font-awesome-icon icon="fa-solid fa-user-tie" /> Teacher:
+                <strong>{{ teacher }}</strong>
+            </p>
+
+            <!-- price -->
+            <p v-if="price" class="mb-2"><font-awesome-icon icon="fa-solid fa-money-bill-wave" /> Price:
+                <strong>{{ price }}</strong>
+            </p>
+
+            <!-- date -->
+            <p v-if="date" class="mb-2"><font-awesome-icon icon="fa-solid fa-calendar-days" /> {{ date }}</p>
+
+            <!-- button -->
             <base-button class="red-btn card-btn" button-label="View Course"></base-button>
         </div>
     </div>
