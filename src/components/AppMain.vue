@@ -5,10 +5,11 @@ import Faculties from './main/Faculties.vue';
 import PresentationRow from './main/PresentationRow.vue';
 import UniversityYear from './main/UniversityYear.vue';
 import UpcomingEvents from './main/UpcomingEvents.vue';
+import LatestCourses from './main/LatestCourses.vue';
 import { coursesPresentation, examsPresentation, feesPresentation } from '../data';
 export default {
     name: 'App Main',
-    components: { BaseSectionDesc, BaseButton, Faculties, PresentationRow, UniversityYear, UpcomingEvents },
+    components: { BaseSectionDesc, BaseButton, Faculties, PresentationRow, UniversityYear, UpcomingEvents, LatestCourses },
     data() {
         return {
             coursesPresentation,
@@ -46,7 +47,7 @@ export default {
 
     <!-- # latest courses -->
     <section id="latest-courses">
-
+        <latest-courses></latest-courses>
     </section>
 </template>
 
