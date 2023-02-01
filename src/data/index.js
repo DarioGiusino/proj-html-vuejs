@@ -31,26 +31,44 @@ const courses = [
     title: "Make better Decisions",
     teacher: "James Collins",
     price: "$21.00",
-    image: "Decisions",
+    image: "Decisions-icon.png",
   },
   {
     title: "How to be a speaker",
     teacher: "James Collins",
     price: "Free",
-    image: "Speaker",
+    image: "Speaker-icon.png",
   },
   {
     title: "Network introductions",
     teacher: "James Collins",
     price: "Free",
-    image: "Network",
+    image: "Network-icon.png",
   },
   {
     title: "Brand Management",
     teacher: "James Collins",
     price: "Free",
-    image: "Brand",
+    image: "Brand-icon.png",
   },
 ];
 
-export { faculties, courses };
+const events = [
+  {
+    title: "Coaching Sessions",
+    date: "20 May 21:30 PM",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor [...]",
+  },
+  {
+    title: "Coaching Sessions",
+    date: "24 Mar 18:00 PM",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor [...]",
+  },
+  {
+    title: "Coaching Sessions",
+    date: "12 Feb 13:30 PM",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor [...]",
+  },
+];
+
+export { faculties, courses, events };
