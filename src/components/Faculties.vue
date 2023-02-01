@@ -41,12 +41,13 @@ export default {
             </div>
         </div>
         <div class="container">
-            <div class="row p-5">
+            <div class="row p-5 justify-content-center">
                 <div class="col-4">
                     <img src="../assets/img/Gavel-Illustration-e1556884768193.png" alt="gavel">
                 </div>
-                <div class="col-8">
-                    <base-section-desc title="Law Faculty" paragraph="bla bla bla">
+                <div class="col-6">
+                    <base-section-desc class="p-4" title="Law Faculty"
+                        paragraph="Learning from world-leading academics and practitioners, you'll not only receive an outstanding grounding in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions.">
                         <base-button class="red-btn" buttonLabel="Read More"></base-button></base-section-desc>
                 </div>
             </div>
