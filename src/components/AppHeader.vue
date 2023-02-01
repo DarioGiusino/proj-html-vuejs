@@ -73,6 +73,7 @@ header {
     .bg-image {
         position: absolute;
         z-index: -1;
+        width: 100%;
     }
 
     nav {
