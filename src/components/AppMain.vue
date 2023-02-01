@@ -37,6 +37,9 @@ export default {
     <section id="faculties">
         <faculties></faculties>
     </section>
+
+    <!-- # wave-1 -->
+    <div class="main-wave-1"></div>
 </template>
 
 <style scoped lang="scss">
@@ -53,5 +56,11 @@ export default {
 #faculties {
     padding: 2.5rem 0;
     color: $text-grey-10;
+}
+
+.main-wave-1 {
+    height: 10rem;
+    background-size: cover;
+    background-image: url('../assets/svg/svg-0.svg');
 }
 </style>

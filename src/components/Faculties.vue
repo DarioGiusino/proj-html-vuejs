@@ -53,7 +53,7 @@ export default {
         <!-- # faculty description -->
         <div class="container">
             <div v-for="faculty, i in faculties" :key="faculty.name" v-show="currentIndex === i"
-                class="row p-5 justify-content-center">
+                class="row p-5 pb-0 justify-content-center">
                 <div class="col-4">
                     <img :src="facultyImage(faculty.image)" :alt="faculty.name">
                 </div>
