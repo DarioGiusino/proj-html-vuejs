@@ -9,7 +9,9 @@ export default {
         paragraph: String,
         date: String,
         teacher: String,
-        price: String
+        price: String,
+        buttonColor: String,
+        buttonLabel: String
     },
     methods: {
         // build image src
@@ -53,7 +55,9 @@ export default {
             </p>
 
             <!-- button -->
-            <base-button class="red-btn card-btn" button-label="View Course"></base-button>
+            <base-button :class="buttonColor" class="card-btn" :button-label="buttonLabel">
+                <slot></slot>
+            </base-button>
         </div>
     </div>
 </template>

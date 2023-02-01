@@ -24,7 +24,8 @@ export default {
         <div class="container">
             <div class="row row-cols-3 justify-content-center">
                 <div v-for="event in events" :key="event.date" class="col">
-                    <base-card :title="event.title" :date="event.date" :paragraph="event.text"></base-card>
+                    <base-card :title="event.title" :date="event.date" :paragraph="event.text" button-color="red-btn"
+                        button-label="Find More"></base-card>
                 </div>
             </div>
         </div>
