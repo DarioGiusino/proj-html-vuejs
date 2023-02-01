@@ -47,4 +47,8 @@ export default {
     background-size: contain;
     background-position: right;
 }
+
+#faculties {
+    padding: 2.5rem 0;
+}
 </style>
