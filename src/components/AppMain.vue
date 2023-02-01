@@ -40,6 +40,8 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../assets/scss/partials/variables.scss' as *;
+
 #presentation {
     padding: 2.5rem 0;
     background-image: url('../assets/img/home-background.png');
@@ -50,5 +52,6 @@ export default {
 
 #faculties {
     padding: 2.5rem 0;
+    color: $text-grey-10;
 }
 </style>
