@@ -1,10 +1,13 @@
 <script>
 import { faculties } from '../data';
+import BaseButton from './generics/BaseButton.vue';
+import BaseSectionDesc from './generics/BaseSectionDesc.vue';
 export default {
     name: 'Faculties section',
     data() {
         return { faculties }
     },
+    components: { BaseButton, BaseSectionDesc },
     methods: {
         // build image src for faculties
         facultyImage(path) {
@@ -34,6 +37,17 @@ export default {
                         <img :src="facultyImage(faculty.image)" :alt="faculty.name">
                         <p>{{ faculty.name }}</p>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-4">
+                    <img src="../assets/img/Gavel-Illustration-e1556884768193.png" alt="gavel">
+                </div>
+                <div class="col-8">
+                    <base-section-desc title="Law Faculty" paragraph="bla bla bla">
+                        <base-button class="red-btn" buttonLabel="Read More"></base-button></base-section-desc>
                 </div>
             </div>
         </div>
