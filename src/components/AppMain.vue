@@ -58,7 +58,6 @@ export default {
 @use '../assets/scss/partials/variables.scss' as *;
 
 #courses-presentation {
-    padding: 2.5rem 0;
     background-image: url('../assets/img/home-background.png');
     background-repeat: no-repeat;
     background-size: contain;
