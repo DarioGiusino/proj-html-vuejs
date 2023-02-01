@@ -48,9 +48,16 @@ export default {
     <!-- # latest courses -->
     <section id="latest-courses">
         <latest-courses></latest-courses>
+
+        <!-- ? exams presentation-->
         <presentation-row :icon="examsPresentation.icon" :image="examsPresentation.image"
             :title="examsPresentation.title" :paragraph="examsPresentation.paragraph" button-color="red-btn"
             :button-label="examsPresentation.button"></presentation-row>
+
+        <!-- ? fees presentation-->
+        <presentation-row direction="flex-row-reverse" :icon="feesPresentation.icon" :image="feesPresentation.image"
+            :title="feesPresentation.title" :paragraph="feesPresentation.paragraph" button-color="red-btn"
+            :button-label="feesPresentation.button"></presentation-row>
     </section>
 </template>
 
@@ -65,7 +72,7 @@ export default {
 }
 
 #faculties {
-    padding: 2.5rem 0;
+    padding: 3rem 0;
     color: $text-grey-10;
 }
 
