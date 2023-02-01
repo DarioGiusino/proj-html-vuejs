@@ -79,6 +79,10 @@ export default {
 
     .card-body {
         color: $text-grey-8 ;
+
+        p {
+            font-weight: 300;
+        }
     }
 
     .card-btn {
