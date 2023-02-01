@@ -1,9 +1,10 @@
 <script>
 import BaseSectionDesc from './generics/BaseSectionDesc.vue';
 import BaseButton from './generics/BaseButton.vue';
+import Faculties from './Faculties.vue';
 export default {
     name: 'App Main',
-    components: { BaseSectionDesc, BaseButton }
+    components: { BaseSectionDesc, BaseButton, Faculties }
 }
 </script>
 
@@ -30,6 +31,11 @@ export default {
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- # faculties -->
+    <section id="faculties">
+        <faculties></faculties>
     </section>
 </template>
 
