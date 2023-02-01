@@ -55,7 +55,7 @@ export default {
             </p>
 
             <!-- button -->
-            <base-button :class="buttonColor" class="card-btn" :button-label="buttonLabel">
+            <base-button :class="buttonColor" class="card-btn red-btn" :button-label="buttonLabel">
                 <slot></slot>
             </base-button>
         </div>
@@ -86,7 +86,6 @@ export default {
     }
 
     .card-btn {
-        background-color: $bg-red-1;
         box-shadow: 0 0 20px -10px $fill-black;
         padding: 10px 20px;
         position: absolute;

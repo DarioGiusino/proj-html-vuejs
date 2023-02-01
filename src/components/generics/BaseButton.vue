@@ -18,7 +18,7 @@ export default {
 <style scoped lang="scss">
 button {
     cursor: pointer;
-    border: inherit;
+    border: 0.5px solid transparent;
     border-radius: 30px;
     padding: 20px 30px;
 }

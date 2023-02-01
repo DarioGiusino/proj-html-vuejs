@@ -41,7 +41,9 @@ export default {
 <style scoped lang="scss">
 @use '../../assets/scss/partials/variables.scss' as *;
 
-* {
+header,
+main,
+footer {
     background-color: $bg-red-1;
     color: $text-white-1;
 }
