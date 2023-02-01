@@ -58,7 +58,7 @@ export default {
                     <img :src="facultyImage(faculty.image)" :alt="faculty.name">
                 </div>
                 <div class="col-6">
-                    <base-section-desc class="p-4" :title="faculty.name"
+                    <base-section-desc class="p-4 faculty-desc" :title="faculty.name"
                         paragraph="Learning from world-leading academics and practitioners, you'll not only receive an outstanding grounding in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions.">
                         <base-button class="red-btn" buttonLabel="Read More"></base-button></base-section-desc>
                 </div>
@@ -99,6 +99,10 @@ export default {
         }
 
     }
+}
+
+.faculty-desc {
+    color: $text-grey-5;
 }
 
 .active {
