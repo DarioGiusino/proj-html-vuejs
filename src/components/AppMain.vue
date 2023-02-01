@@ -5,19 +5,26 @@ import Faculties from './main/Faculties.vue';
 import PresentationRow from './main/PresentationRow.vue';
 import UniversityYear from './main/UniversityYear.vue';
 import UpcomingEvents from './main/UpcomingEvents.vue';
+import { coursesPresentation, examsPresentation, feesPresentation } from '../data';
 export default {
     name: 'App Main',
-    components: { BaseSectionDesc, BaseButton, Faculties, PresentationRow, UniversityYear, UpcomingEvents }
+    components: { BaseSectionDesc, BaseButton, Faculties, PresentationRow, UniversityYear, UpcomingEvents },
+    data() {
+        return {
+            coursesPresentation,
+            examsPresentation,
+            feesPresentation
+        }
+    }
 }
 </script>
 
 <template>
     <!-- # courses presentation section -->
     <section id="courses-presentation">
-        <presentation-row icon="Books-icon.png" image="Graduation-Illustration.png"
-            title="Thousands of courses for any type of student"
-            paragraph="At EduPrime, it doesn't matter what domain you wish to pursue a career in. Here you can find a course that satisfies your needs within a click away and applies for a course in a matter of minutes. EduPrime is ranked as the most versatile university in the world, thanks to the number of courses it provides."
-            button-color="yellow-btn" button-label="Browse through courses"></presentation-row>
+        <presentation-row icon="Books-icon.png" image="Graduation-Illustration.png" :title="coursesPresentation.title"
+            :paragraph="coursesPresentation.paragraph" button-color="yellow-btn"
+            button-label="Browse through courses"></presentation-row>
     </section>
 
     <!-- # faculties -->
