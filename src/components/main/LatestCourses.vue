@@ -30,5 +30,6 @@ export default {
 section {
     color: $text-grey-10;
     padding: 3rem 0;
+    margin-bottom: 3rem;
 }
 </style>

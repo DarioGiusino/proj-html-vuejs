@@ -23,8 +23,8 @@ export default {
 <template>
     <!-- # courses presentation section -->
     <section id="courses-presentation">
-        <presentation-row icon="Books-icon.png" image="Graduation-Illustration.png" :title="coursesPresentation.title"
-            :paragraph="coursesPresentation.paragraph" button-color="yellow-btn"
+        <presentation-row :icon="coursesPresentation.icon" :image="coursesPresentation.image"
+            :title="coursesPresentation.title" :paragraph="coursesPresentation.paragraph" button-color="yellow-btn"
             button-label="Browse through courses"></presentation-row>
     </section>
 

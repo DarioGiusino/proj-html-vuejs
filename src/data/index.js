@@ -75,18 +75,24 @@ const coursesPresentation = {
   title: "Thousands of courses for any type of student",
   paragraph:
     "At EduPrime, it doesn't matter what domain you wish to pursue a career in. Here you can find a course that satisfies your needs within a click away and applies for a course in a matter of minutes. EduPrime is ranked as the most versatile university in the world, thanks to the number of courses it provides.",
+  icon: "Books-icon.png",
+  image: "Graduation-Illustration.png",
 };
 
 const examsPresentation = {
   title: "The most efficient examination method",
   paragraph:
     "EduPrime has gathered teachers from around the globe to brainstorm in order to facilitate the evaluation of our students. Every teacher from our university has an influence on how students are evaluated at his/her subject.",
+  icon: "Exam-icon.png",
+  image: "Exam-Illustration.png",
 };
 
 const feesPresentation = {
   title: "Variable fees for international students",
   paragraph:
     "EduPrime has gathered teachers from around the globe to brainstorm in order to facilitate the evaluation of our students. Every teacher from our university has an influence on how students are evaluated at his/her subject.",
+  icon: "Exam-icon-1.png",
+  image: "Girl-Illustration.png",
 };
 
 export {
