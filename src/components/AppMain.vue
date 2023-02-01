@@ -36,6 +36,11 @@ export default {
 
     <!-- # wave-2 -->
     <div class="wave wave-2"></div>
+
+    <!-- # latest courses -->
+    <section id="latest-courses">
+
+    </section>
 </template>
 
 <style scoped lang="scss">
