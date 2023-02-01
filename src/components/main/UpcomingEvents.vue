@@ -23,7 +23,7 @@ export default {
     <!-- #coaching cards -->
     <main>
         <div class="container">
-            <div class="row row-cols-3 justify-content-center">
+            <div class="row row-cols-3">
                 <div v-for="event in events" :key="event.date" class="col">
                     <base-card :title="event.title" :date="event.date" :paragraph="event.text" button-color="red-btn"
                         button-label="Find More"><font-awesome-icon icon="fa-solid fa-plus" /></base-card>
