@@ -1,6 +1,8 @@
 <script>
+import BaseCard from '../generics/BaseCard.vue'
 export default {
-    name: 'Upcoming Events'
+    name: 'Upcoming Events',
+    components: { BaseCard }
 }
 </script>
 
@@ -15,7 +17,11 @@ export default {
 
     <!-- #coaching cards -->
     <main>
-
+        <div class="container">
+            <div class="row row-cols-3 justify-content-center">
+                <base-card></base-card>
+            </div>
+        </div>
     </main>
 </template>
 
