@@ -6,10 +6,11 @@ import PresentationRow from './main/PresentationRow.vue';
 import UniversityYear from './main/UniversityYear.vue';
 import UpcomingEvents from './main/UpcomingEvents.vue';
 import LatestCourses from './main/LatestCourses.vue';
+import Newsletter from './main/Newsletter.vue';
 import { coursesPresentation, examsPresentation, feesPresentation } from '../data';
 export default {
     name: 'App Main',
-    components: { BaseSectionDesc, BaseButton, Faculties, PresentationRow, UniversityYear, UpcomingEvents, LatestCourses },
+    components: { BaseSectionDesc, BaseButton, Faculties, PresentationRow, UniversityYear, UpcomingEvents, LatestCourses, Newsletter },
     data() {
         return {
             coursesPresentation,
@@ -59,6 +60,11 @@ export default {
         <presentation-row direction="flex-row-reverse" :icon="feesPresentation.icon" :image="feesPresentation.image"
             :title="feesPresentation.title" :paragraph="feesPresentation.paragraph" button-color="red-btn"
             :button-label="feesPresentation.button"></presentation-row>
+    </section>
+
+    <!-- # newsletter -->
+    <section id="newsletter">
+        <newsletter></newsletter>
     </section>
 </template>
 
