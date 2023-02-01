@@ -9,9 +9,8 @@ export default {
 </script>
 
 <template>
-    <!-- # many courses section -->
-    <section id="presentation">
-        <!-- ? presentation section -->
+    <!-- # courses presentation section -->
+    <section id="courses-presentation">
         <div class="container">
             <div class="row">
                 <div class="col-8">
@@ -45,7 +44,7 @@ export default {
 <style scoped lang="scss">
 @use '../assets/scss/partials/variables.scss' as *;
 
-#presentation {
+#courses-presentation {
     padding: 2.5rem 0;
     background-image: url('../assets/img/home-background.png');
     background-repeat: no-repeat;
