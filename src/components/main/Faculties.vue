@@ -1,7 +1,7 @@
 <script>
-import { faculties } from '../data';
-import BaseButton from './generics/BaseButton.vue';
-import BaseSectionDesc from './generics/BaseSectionDesc.vue';
+import { faculties } from '../../data';
+import BaseButton from '../generics/BaseButton.vue';
+import BaseSectionDesc from '../generics/BaseSectionDesc.vue';
 export default {
     name: 'Faculties section',
     data() {
@@ -15,7 +15,7 @@ export default {
         // build image src for faculties
         facultyImage(path) {
             //build src
-            const url = new URL(`../assets/img/${path}`, import.meta.url);
+            const url = new URL(`../../assets/img/${path}`, import.meta.url);
 
             //return src
             return url.href;
@@ -68,7 +68,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use '../assets/scss/partials/variables.scss' as *;
+@use '../../assets/scss/partials/variables.scss' as *;
 
 .line {
     box-shadow: 0 0 15px -10px $fill-black;

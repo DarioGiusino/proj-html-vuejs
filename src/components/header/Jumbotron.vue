@@ -1,5 +1,5 @@
 <script>
-import BaseButton from './generics/BaseButton.vue';
+import BaseButton from '../generics/BaseButton.vue';
 export default {
     name: 'Jumbotron',
     components: { BaseButton },
@@ -21,7 +21,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use '../assets/scss/partials/variables.scss' as *;
+@use '../../assets/scss/partials/variables.scss' as *;
 
 #jumbotron {
     background-color: $bg-red-2;

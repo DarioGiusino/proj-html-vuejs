@@ -1,7 +1,7 @@
 <script>
-import NavLinks from './NavLinks.vue';
+import NavLinks from './header/NavLinks.vue';
 import BaseButton from './generics/BaseButton.vue';
-import Jumbotron from './Jumbotron.vue';
+import Jumbotron from './header/Jumbotron.vue';
 export default {
     name: 'App Header',
     components: { NavLinks, BaseButton, Jumbotron },

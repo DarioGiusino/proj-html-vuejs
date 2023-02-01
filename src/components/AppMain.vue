@@ -1,7 +1,7 @@
 <script>
 import BaseSectionDesc from './generics/BaseSectionDesc.vue';
 import BaseButton from './generics/BaseButton.vue';
-import Faculties from './Faculties.vue';
+import Faculties from './main/Faculties.vue';
 export default {
     name: 'App Main',
     components: { BaseSectionDesc, BaseButton, Faculties }
