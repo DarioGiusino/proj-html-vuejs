@@ -1,8 +1,12 @@
 <script>
-import BaseCard from '../generics/BaseCard.vue'
+import BaseCard from '../generics/BaseCard.vue';
+import { events } from '../../data';
 export default {
     name: 'Upcoming Events',
-    components: { BaseCard }
+    components: { BaseCard },
+    data() {
+        return { events }
+    }
 }
 </script>
 
@@ -19,7 +23,9 @@ export default {
     <main>
         <div class="container">
             <div class="row row-cols-3 justify-content-center">
-                <base-card></base-card>
+                <div v-for="event in events" :key="event.date" class="col">
+                    <base-card :title="event.title" :date="event.date" :paragraph="event.text"></base-card>
+                </div>
             </div>
         </div>
     </main>

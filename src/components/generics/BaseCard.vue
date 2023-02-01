@@ -34,7 +34,10 @@ export default {
         <!-- ? card body -->
         <div class="card-body">
             <!-- title -->
-            <h5 class="fw-semibold">{{ title }}</h5>
+            <h4 class="fw-semibold">{{ title }}</h4>
+
+            <!-- date -->
+            <p v-if="date" class="mb-2"><font-awesome-icon icon="fa-solid fa-calendar-days" /> {{ date }}</p>
 
             <!-- paragraph -->
             <p v-if="paragraph" class="mb-2">{{ paragraph }}</p>
@@ -48,9 +51,6 @@ export default {
             <p v-if="price" class="mb-2"><font-awesome-icon icon="fa-solid fa-money-bill-wave" /> Price:
                 <strong>{{ price }}</strong>
             </p>
-
-            <!-- date -->
-            <p v-if="date" class="mb-2"><font-awesome-icon icon="fa-solid fa-calendar-days" /> {{ date }}</p>
 
             <!-- button -->
             <base-button class="red-btn card-btn" button-label="View Course"></base-button>
@@ -66,7 +66,7 @@ export default {
     box-shadow: 0 0 20px -10px $fill-black;
     color: $text-grey-9;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
     position: relative;
 
     figure {
@@ -82,7 +82,7 @@ export default {
         box-shadow: 0 0 20px -10px $fill-black;
         padding: 10px 20px;
         position: absolute;
-        top: 92%;
+        top: 90%;
         right: 50%;
         transform: translate(50%, 0);
     }
