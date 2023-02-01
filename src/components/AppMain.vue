@@ -25,7 +25,7 @@ export default {
     <section id="courses-presentation">
         <presentation-row :icon="coursesPresentation.icon" :image="coursesPresentation.image"
             :title="coursesPresentation.title" :paragraph="coursesPresentation.paragraph" button-color="yellow-btn"
-            button-label="Browse through courses"></presentation-row>
+            :button-label="coursesPresentation.button"></presentation-row>
     </section>
 
     <!-- # faculties -->
@@ -48,6 +48,9 @@ export default {
     <!-- # latest courses -->
     <section id="latest-courses">
         <latest-courses></latest-courses>
+        <presentation-row :icon="examsPresentation.icon" :image="examsPresentation.image"
+            :title="examsPresentation.title" :paragraph="examsPresentation.paragraph" button-color="red-btn"
+            :button-label="examsPresentation.button"></presentation-row>
     </section>
 </template>
 
