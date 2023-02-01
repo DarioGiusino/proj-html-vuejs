@@ -7,14 +7,33 @@ export default {
     components: { NavLinks, BaseButton, Jumbotron },
     data() {
         return {
-            headerLinks: ['Home', 'Courses', 'About Us', 'News', 'Pages', 'Contact', 'Purchase']
+            headerLinks: ['Home', 'Courses', 'About Us', 'News', 'Pages', 'Contact', 'Purchase'],
+            currentBG: 1,
         }
+    },
+    methods: {
+        rotateBG() {
+            setInterval(() => {
+                this.currentBG++
+                if (this.currentBG > 3) {
+                    this.currentBG = 1;
+                }
+            }, 4000);
+        }
+    },
+    mounted() {
+        this.rotateBG()
     }
 }
 </script>
 
 <template>
     <header>
+        <!-- # header bg slider -->
+        <img v-if="currentBG === 1" class="bg-image" src="../assets/img/theme_slider1_bg-1.jpg" alt="bg-1">
+        <img v-if="currentBG === 2" class="bg-image" src="../assets/img/theme_slider2_bg-1.jpg" alt="bg-2">
+        <img v-if="currentBG === 3" class="bg-image" src="../assets/img/theme_slider3_bg-1.jpg" alt="bg-3">
+
         <!-- # upper navbar -->
         <nav class="d-flex justify-content-between align-items-center">
             <!-- left logo -->
@@ -44,13 +63,17 @@ export default {
 @use '../assets/scss/partials/variables.scss' as *;
 
 header {
-    // height: 600px;
-    background-image: url('../assets/img/theme_slider2_bg-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: $text-white-1;
     position: relative;
+    overflow: hidden;
+
+    .bg-image {
+        position: absolute;
+        z-index: -1;
+    }
 
     nav {
         padding: 1.25rem;
