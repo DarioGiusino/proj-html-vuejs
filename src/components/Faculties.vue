@@ -5,7 +5,10 @@ import BaseSectionDesc from './generics/BaseSectionDesc.vue';
 export default {
     name: 'Faculties section',
     data() {
-        return { faculties }
+        return {
+            currentIndex: 0,
+            faculties
+        }
     },
     components: { BaseButton, BaseSectionDesc },
     methods: {
@@ -16,6 +19,11 @@ export default {
 
             //return src
             return url.href;
+        },
+
+        //method to change faculty description 
+        changeFaculty(target) {
+            this.currentIndex = target;
         }
     }
 }
@@ -33,7 +41,8 @@ export default {
         <div class="line">
             <div class="container">
                 <div class="row row-cols-5 justify-content-center">
-                    <div v-for="faculty in faculties" class="col faculty-card">
+                    <div v-for="faculty, i in faculties" :key="faculty.name" @click="changeFaculty(i)"
+                        class="col faculty-card" :class="{ active: currentIndex === i }">
                         <img :src="facultyImage(faculty.icon)" :alt="faculty.name">
                         <p>{{ faculty.name }}</p>
                     </div>
@@ -43,12 +52,13 @@ export default {
 
         <!-- # faculty description -->
         <div class="container">
-            <div class="row p-5 justify-content-center">
+            <div v-for="faculty, i in faculties" :key="faculty.name" v-show="currentIndex === i"
+                class="row p-5 justify-content-center">
                 <div class="col-4">
-                    <img src="../assets/img/Gavel.png" alt="gavel">
+                    <img :src="facultyImage(faculty.image)" :alt="faculty.name">
                 </div>
                 <div class="col-6">
-                    <base-section-desc class="p-4" title="Law Faculty"
+                    <base-section-desc class="p-4" :title="faculty.name"
                         paragraph="Learning from world-leading academics and practitioners, you'll not only receive an outstanding grounding in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions.">
                         <base-button class="red-btn" buttonLabel="Read More"></base-button></base-section-desc>
                 </div>
@@ -88,24 +98,28 @@ export default {
             margin: 0.5rem 0 0 0;
         }
 
-        &:hover {
-            background-color: $bg-red-1;
-            color: $text-white-1;
-
-            img {
-                filter: grayscale(1)
-            }
-
-            &::after {
-                content: '\25BC';
-                color: $bg-red-1;
-                position: absolute;
-                bottom: -15px;
-                left: 50%;
-                transform: translate(-50%, 0);
-            }
-
-        }
     }
+}
+
+.active {
+    background-color: $bg-red-1;
+
+    img {
+        filter: grayscale(1)
+    }
+
+    p {
+        color: $text-white-1;
+    }
+
+    &::after {
+        content: '\25BC';
+        color: $bg-red-1;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
 }
 </style>
