@@ -83,6 +83,12 @@ export default {
     color: $text-grey-10;
 }
 
+#newsletter {
+    padding: 2rem 0;
+    color: $text-white-1;
+    background-color: $bg-red-1;
+}
+
 .wave-1 {
     height: 10rem;
     background-size: cover;
