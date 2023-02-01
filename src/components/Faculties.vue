@@ -61,6 +61,8 @@ export default {
         align-items: center;
         justify-content: center;
 
+        position: relative;
+
         img {
             width: 60%;
         }
@@ -70,11 +72,20 @@ export default {
         }
 
         &:hover {
-            background-color: $bg-red-2;
-            color: $text-white-2;
+            background-color: $bg-red-1;
+            color: $text-white-1;
 
             img {
-                filter: invert(1);
+                filter: grayscale(1)
+            }
+
+            &::after {
+                content: '\25BC';
+                color: $bg-red-1;
+                position: absolute;
+                bottom: -15px;
+                left: 50%;
+                transform: translate(-50%, 0);
             }
 
         }
