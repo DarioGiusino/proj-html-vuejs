@@ -55,5 +55,7 @@ export default {
     height: 10rem;
     background-size: cover;
     background-image: url('../assets/svg/svg-0.svg');
+    position: relative;
+    bottom: -1px;
 }
 </style>
