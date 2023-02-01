@@ -50,8 +50,6 @@ export default {
         height: 100%;
         max-width: fit-content;
         margin: 0 auto;
-
-
     }
 }
 </style>

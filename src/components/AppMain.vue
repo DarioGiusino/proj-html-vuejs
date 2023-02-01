@@ -72,6 +72,9 @@ export default {
     <section id="partners">
         <partners></partners>
     </section>
+
+    <!-- # wave-3 -->
+    <div class="wave wave-3"></div>
 </template>
 
 <style scoped lang="scss">
@@ -101,8 +104,6 @@ export default {
 }
 
 .wave-1 {
-    height: 10rem;
-    background-size: cover;
     background-image: url('../assets/svg/svg-0.svg');
     bottom: -1px;
 }
@@ -110,5 +111,10 @@ export default {
 .wave-2 {
     background-image: url('../assets/svg/svg-1.svg');
     top: -1px;
+}
+
+.wave-3 {
+    background-image: url('../assets/img/background-wave3.png');
+    background-color: $bg-white-4;
 }
 </style>
