@@ -8,8 +8,17 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import {
   faMagnifyingGlass,
   faUserPlus,
+  faCalendarDays,
+  faUserTie,
+  faMoneyBillWave,
 } from "@fortawesome/free-solid-svg-icons";
-library.add(faMagnifyingGlass, faUserPlus);
+library.add(
+  faMagnifyingGlass,
+  faUserPlus,
+  faCalendarDays,
+  faUserTie,
+  faMoneyBillWave
+);
 
 import App from "./App.vue";
 
