@@ -13,7 +13,8 @@ export default {
                 <h2 class="mb-0">Subscribe Now to Our Newsletter !</h2>
             </div>
             <div class="col">
-                <base-input-text></base-input-text>
+                <base-input-text placeholder="Email address..."><font-awesome-icon
+                        icon="fa-solid fa-paper-plane" /></base-input-text>
             </div>
         </div>
     </div>

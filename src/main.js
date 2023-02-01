@@ -13,6 +13,7 @@ import {
   faMoneyBillWave,
   faPlus,
   faEye,
+  faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
 library.add(
   faMagnifyingGlass,
@@ -21,7 +22,8 @@ library.add(
   faUserTie,
   faMoneyBillWave,
   faPlus,
-  faEye
+  faEye,
+  faPaperPlane
 );
 
 import App from "./App.vue";
