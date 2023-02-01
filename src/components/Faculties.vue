@@ -4,6 +4,16 @@ export default {
     name: 'Faculties section',
     data() {
         return { faculties }
+    },
+    methods: {
+        // build image src for faculties
+        facultyImage(path) {
+            //build src
+            const url = new URL(`../assets/img/${path}-tabs-v2.png`, import.meta.url);
+
+            //return src
+            return url.href;
+        }
     }
 }
 </script>
@@ -21,7 +31,7 @@ export default {
             <div class="container">
                 <div class="row row-cols-5 justify-content-center">
                     <div v-for="faculty in faculties" class="col faculty-card">
-                        <img src="../assets/img/Gavel-tabs-v2.png" alt="gavel">
+                        <img :src="facultyImage(faculty.image)" :alt="faculty.name">
                         <p>{{ faculty.name }}</p>
                     </div>
                 </div>
@@ -46,8 +56,27 @@ export default {
         text-transform: capitalize;
         cursor: pointer;
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 60%;
+        }
+
         p {
             margin: 0.5rem 0 0 0;
+        }
+
+        &:hover {
+            background-color: $bg-red-2;
+            color: $text-white-2;
+
+            img {
+                filter: invert(1);
+            }
+
         }
     }
 }

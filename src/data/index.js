@@ -5,7 +5,7 @@ const faculties = [
   },
   {
     name: "Economy",
-    image: "Coin",
+    image: "Coins",
   },
   {
     name: "Medicine",
