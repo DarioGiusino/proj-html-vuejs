@@ -12,7 +12,7 @@ export default {
         // build image src for faculties
         facultyImage(path) {
             //build src
-            const url = new URL(`../assets/img/${path}-tabs-v2.png`, import.meta.url);
+            const url = new URL(`../assets/img/${path}`, import.meta.url);
 
             //return src
             return url.href;
@@ -28,22 +28,24 @@ export default {
         <p class="mb-4">A single universisty with a load of courses tailored to satisfy any student's needs.</p>
     </header>
 
-    <!-- # cards -->
     <main>
+        <!-- # cards -->
         <div class="line">
             <div class="container">
                 <div class="row row-cols-5 justify-content-center">
                     <div v-for="faculty in faculties" class="col faculty-card">
-                        <img :src="facultyImage(faculty.image)" :alt="faculty.name">
+                        <img :src="facultyImage(faculty.icon)" :alt="faculty.name">
                         <p>{{ faculty.name }}</p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- # faculty description -->
         <div class="container">
             <div class="row p-5 justify-content-center">
                 <div class="col-4">
-                    <img src="../assets/img/Gavel-Illustration-e1556884768193.png" alt="gavel">
+                    <img src="../assets/img/Gavel.png" alt="gavel">
                 </div>
                 <div class="col-6">
                     <base-section-desc class="p-4" title="Law Faculty"

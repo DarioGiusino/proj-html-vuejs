@@ -1,23 +1,28 @@
 const faculties = [
   {
     name: "Law Faculty",
-    image: "Gavel",
+    icon: "Gavel-tabs-v2.png",
+    image: "Gavel.png",
   },
   {
     name: "Economy",
-    image: "Coins",
+    icon: "Coins-tabs-v2.png",
+    image: "Economy.png",
   },
   {
     name: "Medicine",
-    image: "Medicine",
+    icon: "Medicine-tabs-v2.png",
+    image: "Medicine.png",
   },
   {
     name: "Computer Science",
-    image: "Computer",
+    icon: "Computer-tabs-v2.png",
+    image: "Computer-Science.png",
   },
   {
     name: "Graphic Design",
-    image: "Palette",
+    icon: "Palette-tabs-v2.png",
+    image: "Graphic-Design.png",
   },
 ];
 
