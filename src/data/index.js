@@ -98,6 +98,33 @@ const feesPresentation = {
   button: "List of Fees",
 };
 
+const partners = [
+  {
+    image: "partner-2.png",
+  },
+  {
+    image: "partner-3.png",
+  },
+  {
+    image: "partner-4.png",
+  },
+  {
+    image: "partner-5.png",
+  },
+  {
+    image: "partner-6.png",
+  },
+  {
+    image: "partner-8.png",
+  },
+  {
+    image: "partner-1.png",
+  },
+  {
+    image: "partner-7.png",
+  },
+];
+
 export {
   faculties,
   courses,
@@ -105,4 +132,5 @@ export {
   coursesPresentation,
   examsPresentation,
   feesPresentation,
+  partners,
 };

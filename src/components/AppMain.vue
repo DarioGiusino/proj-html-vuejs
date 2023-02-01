@@ -7,10 +7,11 @@ import UniversityYear from './main/UniversityYear.vue';
 import UpcomingEvents from './main/UpcomingEvents.vue';
 import LatestCourses from './main/LatestCourses.vue';
 import Newsletter from './main/Newsletter.vue';
+import Partners from './main/Partners.vue';
 import { coursesPresentation, examsPresentation, feesPresentation } from '../data';
 export default {
     name: 'App Main',
-    components: { BaseSectionDesc, BaseButton, Faculties, PresentationRow, UniversityYear, UpcomingEvents, LatestCourses, Newsletter },
+    components: { BaseSectionDesc, BaseButton, Faculties, PresentationRow, UniversityYear, UpcomingEvents, LatestCourses, Newsletter, Partners },
     data() {
         return {
             coursesPresentation,
@@ -66,6 +67,11 @@ export default {
     <section id="newsletter">
         <newsletter></newsletter>
     </section>
+
+    <!-- # partners -->
+    <section id="partners">
+        <partners></partners>
+    </section>
 </template>
 
 <style scoped lang="scss">
@@ -87,6 +93,11 @@ export default {
     padding: 2rem 0;
     color: $text-white-1;
     background-color: $bg-red-1;
+}
+
+#partners {
+    padding: 3rem 0;
+    color: $text-grey-10;
 }
 
 .wave-1 {
