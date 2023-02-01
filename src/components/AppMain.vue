@@ -3,9 +3,11 @@ import BaseSectionDesc from './generics/BaseSectionDesc.vue';
 import BaseButton from './generics/BaseButton.vue';
 import Faculties from './main/Faculties.vue';
 import PresentationRow from './main/PresentationRow.vue';
+import UniversityYear from './main/UniversityYear.vue';
+import UpcomingEvents from './main/UpcomingEvents.vue';
 export default {
     name: 'App Main',
-    components: { BaseSectionDesc, BaseButton, Faculties, PresentationRow }
+    components: { BaseSectionDesc, BaseButton, Faculties, PresentationRow, UniversityYear, UpcomingEvents }
 }
 </script>
 
@@ -25,6 +27,12 @@ export default {
 
     <!-- # wave-1 -->
     <div class="main-wave-1"></div>
+
+    <!-- # university year -->
+    <section id="university-year">
+        <university-year></university-year>
+        <upcoming-events></upcoming-events>
+    </section>
 </template>
 
 <style scoped lang="scss">
