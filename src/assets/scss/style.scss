@@ -39,3 +39,10 @@ a {
   color: $text-red;
   font-weight: 500;
 }
+
+// * wave util
+.wave {
+  height: 10rem;
+  background-size: cover;
+  position: relative;
+}

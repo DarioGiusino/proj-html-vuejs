@@ -26,13 +26,16 @@ export default {
     </section>
 
     <!-- # wave-1 -->
-    <div class="main-wave-1"></div>
+    <div class="wave wave-1"></div>
 
     <!-- # university year -->
     <section id="university-year">
         <university-year></university-year>
         <upcoming-events></upcoming-events>
     </section>
+
+    <!-- # wave-2 -->
+    <div class="wave wave-2"></div>
 </template>
 
 <style scoped lang="scss">
@@ -51,11 +54,15 @@ export default {
     color: $text-grey-10;
 }
 
-.main-wave-1 {
+.wave-1 {
     height: 10rem;
     background-size: cover;
     background-image: url('../assets/svg/svg-0.svg');
-    position: relative;
     bottom: -1px;
+}
+
+.wave-2 {
+    background-image: url('../assets/svg/svg-1.svg');
+    top: -1px;
 }
 </style>
