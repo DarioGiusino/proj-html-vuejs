@@ -14,6 +14,7 @@ import {
   faPlus,
   faEye,
   faPaperPlane,
+  faAngleUp,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
@@ -31,7 +32,8 @@ library.add(
   faPaperPlane,
   faFacebookF,
   faTwitter,
-  faInstagram
+  faInstagram,
+  faAngleUp
 );
 
 import App from "./App.vue";

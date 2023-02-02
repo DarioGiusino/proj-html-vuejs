@@ -2,16 +2,18 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
+import FloatingButtons from './components/FloatingButtons.vue';
 export default {
   name: 'Edu Prime',
-  components: { AppHeader, AppMain, AppFooter }
+  components: { AppHeader, AppMain, AppFooter, FloatingButtons }
 }
 </script>
 
 <template>
-  <app-header></app-header>
+  <app-header id="app-header"></app-header>
   <app-main></app-main>
   <app-footer></app-footer>
+  <floating-buttons></floating-buttons>
 </template>
 
 <style lang="scss">
