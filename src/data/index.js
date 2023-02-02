@@ -128,25 +128,25 @@ const partners = [
 const footerLists = [
   {
     title: "Get EduPrime",
-    links: {
-      link: "Request a Website",
-      link: "Browse Themes",
-      link: "Payment options",
-      link: "Support System",
-      link: "Checkout",
-      link: "Purchase Theme",
-    },
+    links: [
+      "Request a Website",
+      "Browse Themes",
+      "Payment options",
+      "Support System",
+      "Checkout",
+      "Purchase Theme",
+    ],
   },
   {
     title: "Networking",
-    links: {
-      link: "Purchase Theme",
-      link: "Our Benefits",
-      link: "Our Team",
-      link: "Our Services",
-      link: "Other Products",
-      link: "My account",
-    },
+    links: [
+      "Purchase Theme",
+      "Our Benefits",
+      "Our Team",
+      "Our Services",
+      "Other Products",
+      "My account",
+    ],
   },
 ];
 

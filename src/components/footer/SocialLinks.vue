@@ -14,7 +14,7 @@ export default {
 
     <!-- central description -->
     <main class="mb-4">
-        <p class="mb-0">
+        <p class="mb-0 fw-light">
             EduPrime is the most versatile WordPress theme for educational purposes, showcasing universities, courses,
             secondary schools etc.
         </p>

@@ -1,35 +1,21 @@
 <script>
+import { footerLists } from '../../data';
 export default {
-    name: 'Footer Nav Lists'
+    name: 'Footer Nav Lists',
+    data() {
+        return { footerLists }
+    }
 }
 </script>
 
 <template>
     <!-- lists -->
     <div class="row row-cols-2">
-        <!-- right list -->
-        <div class="col">
-            <h5 class="mb-4">Get EduPrime</h5>
+        <!-- list -->
+        <div v-for="list in footerLists" :key="list.title" class="col">
+            <h5 class="mb-4">{{ list.title }}</h5>
             <ul class="list-group">
-                <li>Request a website</li>
-                <li>Request a website</li>
-                <li>Request a website</li>
-                <li>Request a website</li>
-                <li>Request a website</li>
-                <li>Request a website</li>
-            </ul>
-        </div>
-
-        <!-- left list -->
-        <div class="col">
-            <h5 class="mb-4">Get EduPrime</h5>
-            <ul class="list-group">
-                <li>Request a website</li>
-                <li>Request a website</li>
-                <li>Request a website</li>
-                <li>Request a website</li>
-                <li>Request a website</li>
-                <li>Request a website</li>
+                <li v-for="link in list.links" :key="link"><a href="#">{{ link }}</a></li>
             </ul>
         </div>
     </div>
@@ -42,6 +28,10 @@ ul {
     li {
         margin-bottom: 0.5rem;
         font-weight: 300;
+
+        a:hover {
+            text-decoration: underline;
+        }
     }
 }
 </style>
