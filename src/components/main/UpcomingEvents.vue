@@ -44,7 +44,7 @@ export default {
 header,
 main,
 footer {
-    background-color: $bg-red-1;
+    background-color: $bg-green-1;
     color: $text-white-1;
 }
 

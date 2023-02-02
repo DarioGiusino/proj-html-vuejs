@@ -59,12 +59,12 @@ export default {
 @use '../../assets/scss/partials/variables.scss' as *;
 
 header {
-    background-color: $bg-red-1;
+    background-color: $bg-green-1;
     color: $text-white-1;
 }
 
 main {
-    background-color: $bg-red-1;
+    background-color: $bg-green-1;
     color: $text-white-1;
     padding: 3rem 0;
 

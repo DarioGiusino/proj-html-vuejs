@@ -78,7 +78,7 @@ header {
 
     nav {
         padding: 1.25rem;
-        background-color: $bg-red-2;
+        background-color: $bg-green-2;
 
         .header-logo {
             width: 16rem;
@@ -103,7 +103,7 @@ header {
 
     .header-wave {
         height: 10rem;
-        background-color: $bg-red-2;
+        background-color: $bg-green-2;
         background-size: cover;
         background-image: url('../assets/img/Wave-1.png');
     }

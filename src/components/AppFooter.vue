@@ -36,7 +36,7 @@ export default {
 @use '../assets/scss/partials/variables.scss' as *;
 
 footer {
-    background-color: $bg-red-2;
+    background-color: $bg-green-2;
     color: $text-white-2;
     padding: 6rem 0;
 }

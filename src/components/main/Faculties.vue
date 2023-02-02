@@ -78,7 +78,7 @@ export default {
         padding: 1rem 1.5rem;
         border: 0.1px solid $border-white-4;
         text-align: center;
-        color: $text-red;
+        color: $text-green;
         font-weight: 500;
         text-transform: capitalize;
         cursor: pointer;
@@ -106,7 +106,7 @@ export default {
 }
 
 .active {
-    background-color: $bg-red-1;
+    background-color: $bg-green-1;
 
     img {
         filter: invert(1)
@@ -118,7 +118,7 @@ export default {
 
     &::after {
         content: '\25BC';
-        color: $bg-red-1;
+        color: $bg-green-1;
         position: absolute;
         bottom: -15px;
         left: 50%;

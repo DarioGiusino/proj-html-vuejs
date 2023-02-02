@@ -95,7 +95,7 @@ export default {
 #newsletter {
     padding: 2rem 0;
     color: $text-white-1;
-    background-color: $bg-red-1;
+    background-color: $bg-green-1;
 }
 
 #partners {

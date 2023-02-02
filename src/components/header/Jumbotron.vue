@@ -24,7 +24,7 @@ export default {
 @use '../../assets/scss/partials/variables.scss' as *;
 
 #jumbotron {
-    background-color: $bg-red-2;
+    background-color: $bg-green-2;
 
     display: flex;
     flex-direction: column;

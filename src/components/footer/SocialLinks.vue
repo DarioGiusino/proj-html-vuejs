@@ -43,7 +43,7 @@ export default {
 
     &:hover {
         background-color: $bg-white-2;
-        color: $text-red;
+        color: $text-green;
         border-color: $border-grey;
     }
 }
