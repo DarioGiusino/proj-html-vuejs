@@ -16,5 +16,6 @@ export default {
 <style scoped lang="scss">
 .prova {
     position: relative;
+    left: 2px;
 }
 </style>
