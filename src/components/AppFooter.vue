@@ -1,9 +1,10 @@
 <script>
 import SocialLinks from './footer/SocialLinks.vue';
 import NavLists from './footer/NavLists.vue';
+import Categories from './footer/Categories.vue';
 export default {
     name: 'App Footer',
-    components: { SocialLinks, NavLists }
+    components: { SocialLinks, NavLists, Categories }
 }
 </script>
 
@@ -23,7 +24,9 @@ export default {
                 </div>
 
                 <!-- ? categories (left footer) -->
-                <div class="col"></div>
+                <div class="col">
+                    <categories></categories>
+                </div>
             </div>
         </div>
     </footer>
