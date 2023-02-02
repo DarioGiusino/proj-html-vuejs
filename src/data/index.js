@@ -150,6 +150,30 @@ const footerLists = [
   },
 ];
 
+const footerButtons = [
+  {
+    label: "ECONOMY",
+  },
+  {
+    label: "DESIGN",
+  },
+  {
+    label: "COACHING",
+  },
+  {
+    label: "BUSINESS",
+  },
+  {
+    label: "MEDICINE",
+  },
+  {
+    label: "LAW",
+  },
+  {
+    label: "FITNESS",
+  },
+];
+
 export {
   faculties,
   courses,
@@ -159,4 +183,5 @@ export {
   feesPresentation,
   partners,
   footerLists,
+  footerButtons,
 };
