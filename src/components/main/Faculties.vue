@@ -109,7 +109,7 @@ export default {
     background-color: $bg-red-1;
 
     img {
-        filter: grayscale(1)
+        filter: invert(1)
     }
 
     p {
