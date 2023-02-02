@@ -125,6 +125,31 @@ const partners = [
   },
 ];
 
+const footerLists = [
+  {
+    title: "Get EduPrime",
+    links: {
+      link: "Request a Website",
+      link: "Browse Themes",
+      link: "Payment options",
+      link: "Support System",
+      link: "Checkout",
+      link: "Purchase Theme",
+    },
+  },
+  {
+    title: "Networking",
+    links: {
+      link: "Purchase Theme",
+      link: "Our Benefits",
+      link: "Our Team",
+      link: "Our Services",
+      link: "Other Products",
+      link: "My account",
+    },
+  },
+];
+
 export {
   faculties,
   courses,
@@ -133,4 +158,5 @@ export {
   examsPresentation,
   feesPresentation,
   partners,
+  footerLists,
 };
