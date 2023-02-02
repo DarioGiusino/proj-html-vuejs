@@ -1,8 +1,9 @@
 <script>
 import SocialLinks from './footer/SocialLinks.vue';
+import NavLists from './footer/NavLists.vue';
 export default {
     name: 'App Footer',
-    components: { SocialLinks }
+    components: { SocialLinks, NavLists }
 }
 </script>
 
@@ -17,7 +18,9 @@ export default {
                 </div>
 
                 <!-- ? nav lists (central footer) -->
-                <div class="col"></div>
+                <div class="col">
+                    <nav-lists></nav-lists>
+                </div>
 
                 <!-- ? categories (left footer) -->
                 <div class="col"></div>
