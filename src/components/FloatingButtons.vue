@@ -28,6 +28,8 @@ export default {
     background-color: $bg-yellow;
     border: none;
     color: $text-white-1;
+    box-shadow: 0px 1px 5px 0px $bg-black-2;
+
 
     position: fixed;
     bottom: 1.5rem;
