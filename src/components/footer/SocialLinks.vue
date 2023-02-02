@@ -8,12 +8,12 @@ export default {
 
 <template>
     <!-- upper logo -->
-    <header>
+    <header class="mb-4">
         <img class="w-50" src="../../assets/img/theme_eduprime_logo.png" alt="edu logo">
     </header>
 
     <!-- central description -->
-    <main>
+    <main class="mb-4">
         <p class="mb-0">
             EduPrime is the most versatile WordPress theme for educational purposes, showcasing universities, courses,
             secondary schools etc.
@@ -22,7 +22,9 @@ export default {
 
     <!-- social links -->
     <footer>
-        <base-button class="social-btn"></base-button>
+        <base-button class="social-btn"><font-awesome-icon icon="fa-brands fa-facebook-f" /></base-button>
+        <base-button class="social-btn"><font-awesome-icon icon="fa-brands fa-twitter" /></base-button>
+        <base-button class="social-btn"><font-awesome-icon icon="fa-brands fa-instagram" /></base-button>
     </footer>
 </template>
 
@@ -31,10 +33,18 @@ export default {
 
 .social-btn {
     background-color: transparent;
+    color: $text-white-2;
     border-color: $border-yellow-1;
     padding: 5px 5px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    margin-right: 10px;
+
+    &:hover {
+        background-color: $bg-white-2;
+        color: $text-grey-10;
+        border-color: $border-grey;
+    }
 }
 </style>
